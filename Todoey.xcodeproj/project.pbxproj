@@ -11,7 +11,7 @@
 		7285A83121AAE12D00A12E9C /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7285A83021AAE12D00A12E9C /* TodoListViewController.swift */; };
 		7285A83421AAE12D00A12E9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7285A83221AAE12D00A12E9C /* Main.storyboard */; };
 		7285A83621AAE12E00A12E9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7285A83521AAE12E00A12E9C /* Assets.xcassets */; };
-		7285A83921AAE12E00A12E9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7285A83721AAE12E00A12E9C /* LaunchScreen.storyboard */; };
+		72F0283421AC29F600B6E803 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F0283321AC29F600B6E803 /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,8 +20,8 @@
 		7285A83021AAE12D00A12E9C /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
 		7285A83321AAE12D00A12E9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7285A83521AAE12E00A12E9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7285A83821AAE12E00A12E9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7285A83A21AAE12E00A12E9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72F0283321AC29F600B6E803 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +55,45 @@
 			isa = PBXGroup;
 			children = (
 				7285A82E21AAE12D00A12E9C /* AppDelegate.swift */,
-				7285A83021AAE12D00A12E9C /* TodoListViewController.swift */,
-				7285A83221AAE12D00A12E9C /* Main.storyboard */,
+				72F0283821AC2FB000B6E803 /* Controllers */,
+				72F0283721AC2FA700B6E803 /* Views */,
 				7285A83521AAE12E00A12E9C /* Assets.xcassets */,
-				7285A83721AAE12E00A12E9C /* LaunchScreen.storyboard */,
 				7285A83A21AAE12E00A12E9C /* Info.plist */,
+				72F0283521AC2A6700B6E803 /* Data Model */,
+				72F0283621AC2F8100B6E803 /* Supporting Files */,
 			);
 			path = Todoey;
+			sourceTree = "<group>";
+		};
+		72F0283521AC2A6700B6E803 /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				72F0283321AC29F600B6E803 /* Item.swift */,
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
+		72F0283621AC2F8100B6E803 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		72F0283721AC2FA700B6E803 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7285A83221AAE12D00A12E9C /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		72F0283821AC2FB000B6E803 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7285A83021AAE12D00A12E9C /* TodoListViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,7 +154,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7285A83921AAE12E00A12E9C /* LaunchScreen.storyboard in Resources */,
 				7285A83621AAE12E00A12E9C /* Assets.xcassets in Resources */,
 				7285A83421AAE12D00A12E9C /* Main.storyboard in Resources */,
 			);
@@ -136,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7285A83121AAE12D00A12E9C /* TodoListViewController.swift in Sources */,
+				72F0283421AC29F600B6E803 /* Item.swift in Sources */,
 				7285A82F21AAE12D00A12E9C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,14 +181,6 @@
 				7285A83321AAE12D00A12E9C /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		7285A83721AAE12E00A12E9C /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7285A83821AAE12E00A12E9C /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
